@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css">
+</head>
+<body>
+    <h1>Job Search!!</h1>
+    <h2>"Explore opportunities in tech"</h2>
+    <h3>"Search by keyword — Python, JavaScript, React, and more"</h3>
+    
+    <div class="search-form">
+        <form action="/search" method="get">
+            <input type="text" name="keyword" placeholder="Text Here!">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
